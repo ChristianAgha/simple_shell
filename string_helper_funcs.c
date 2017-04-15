@@ -4,7 +4,6 @@
  * @s1: first string to compare
  * @s2: second string to compare
  * Return: an integer result of the comparison
- *
  */
 int _strcmp(char *s1, char *s2)
 {
@@ -19,11 +18,10 @@ int _strcmp(char *s1, char *s2)
 	return (0);
 }
 /**
- * _strcmp - a function that compares two strings
+ * _strcmp - a function that compares two strings for a const char*
  * @s1: first string to compare
  * @s2: second string to compare
  * Return: an integer result of the comparison
- *
  */
 int _strcmp_env(const char *s1, const char *s2)
 {
@@ -40,8 +38,7 @@ int _strcmp_env(const char *s1, const char *s2)
 /**
  * _strdup - returns a pointer to a new string which is a duplicate
  * of the string str
- * @str: input string
- *
+ * @str: input string of const char*
  * Return: a pointer to a newly allocated space in memory
  */
 char *_strdup(const char *str)
@@ -63,10 +60,9 @@ char *_strdup(const char *str)
 	return (string);
 }
 /**
- * _strlen - returns the length of a string
+ * _strlen - returns the length of a string of const char*
  * @s: input string
  * Return: the length of the string
- *
  */
 int _strlen(const char *s)
 {
@@ -79,11 +75,9 @@ int _strlen(const char *s)
 	return (i);
 }
 /**
- * _strdup - returns a pointer to a new string which is a duplicate
- * of the string str
- * @str: input string
- *
- * Return: a pointer to a newly allocated space in memory
+ * path_to_folder_counter - counts how many folders are in the path
+ * @paths: takes in the path
+ * Return: the number of folders in a path
  */
 unsigned int path_folder_counter(char *paths)
 {
